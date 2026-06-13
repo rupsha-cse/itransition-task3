@@ -21,4 +21,8 @@ app.get('/rupsha619_gmail_com',(req,res)=>{
  res.send(String(x/gcd(x,y)*y))
 })
 
-app.listen(3000,()=>console.log('running'))
+const PORT = process.env.PORT || 3000
+
+app.listen(PORT, () => {
+  console.log('running')
+})
